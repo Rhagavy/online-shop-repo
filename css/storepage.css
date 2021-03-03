@@ -1,0 +1,73 @@
+/**
+   Contains css for the store page
+ * I, Rhagavy Rakulan, 000802106 certify that this material is my original work.  
+ * No other person's work has been used without due acknowledgement. 
+ *
+ * Name: Rhagavy Rakulan, Student#: 000802106
+ * Date created: Monday, November 30, 2020
+**/
+/**custom font**/
+@font-face{
+    font-family: "Joyful";
+    src: url("../fonts/FinkHeavy-_1_.woff");
+}
+/**spacing for cart**/
+.cartitem{
+    border: 5px dashed black;
+    margin-top: 7.5px;
+    padding-left: 5px;
+}
+/**cart list style**/
+.cartitem li {
+    list-style: none;
+    font-size: 1.5em;
+}
+/**sizing for input**/
+input{
+    text-align: center;
+    border-radius:8px;
+    width: 40px;
+}
+/**display style**/
+.itemquantity, .cost{
+    display: inline-block;
+}
+/**item quantity input style**/
+.itemquantity{
+    margin-right: 10px;
+    font-size: 15px;
+    font-family: Joyful,serif;
+    width: 60px;
+    height: 30px;
+}
+/**item cost's font size**/
+.cost{
+    font-size: 18px;
+}
+/**increase,decrease and delete button style**/
+.increase, .decrease, .delete{
+    background-color:#d91515;
+	border:1px solid #0a0a0a;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: Joyful,serif;
+	font-weight:bold;
+	padding:8px 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #000000;
+    margin: 7.5px;
+}
+/**sizing for increase and decrease button**/
+.increase, .decrease{
+    width: 50px;
+    height: 50px;
+    font-size:25px;
+    border-radius:15px;
+}
+/**sizing for delete button**/
+.delete{
+    font-size:15px;
+    width: 70px;
+    border-radius:28px;
+}

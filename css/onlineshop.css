@@ -1,0 +1,234 @@
+/**
+   Contains css for the site which includes the grid layout, navbar,register and
+   login forms.
+ * I, Rhagavy Rakulan, 000802106 certify that this material is my original work.  
+ * No other person's work has been used without due acknowledgement. 
+ *
+ * Name: Rhagavy Rakulan, Student#: 000802106
+ * Date created: Monday, November 30, 2020
+**/
+/**custom font**/
+@font-face{
+    font-family: "Joyful";
+    src: url("../fonts/FinkHeavy-_1_.woff");
+}
+/**margin**/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/**background and font style**/
+body{
+    /*height: 100vh;*/
+    background-image: url(../images/leafbackground.png);
+    background-size: cover;
+    /*background-repeat: no-repeat;*/
+    font-family: Joyful, serif;   
+}
+/**nav style**/
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #DEB887;
+}
+/**logo style**/
+.logo{
+    color: rgb(250, 248, 248);
+    text-shadow: -1px 1px 2.5px #000,
+    1px 1px 2.5px #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000;
+    font-size: 20px;
+}
+/**nav list style**/
+.navitems li{
+    list-style: none;
+}
+/**nav hover effect**/
+.navitems li a:hover{
+    background-color: #111;
+}
+/**navitems style**/
+.navitems{
+    display: flex;
+    justify-content: space-around;
+    width: 40%; 
+}
+/**nav text style**/
+.navitems a {
+    color: rgb(250, 248, 248);
+    text-shadow: -1px 1px 2.5px #000,
+    1px 1px 2.5px #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000;
+    font-size: 20px;
+}
+
+#box1{
+   /* border: 0.5em solid coral;*/
+}
+/** grid style**/
+#box2{
+    /*border: 0.5em solid violet;*/
+    border: 15px double rgba(28,110,164,0.85);
+    border-radius: 40px 40px 40px 40px;
+    
+    
+}
+/** grid style**/
+#box3b{
+    /*border: 0.5em solid lightblue;*/
+    border: 7px dashed rgba(28,110,164,0.85);
+    border-radius: 40px 40px 40px 40px;
+}
+/**heading style**/
+h1{
+    text-align: center;
+}
+/**grid**/
+main{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    /*grid-template-rows: 100%;*/
+}
+/**form style**/
+.centerit{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+}
+/**form heading**/
+.centerit h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid lightblue;
+}
+/**form style**/
+.centerit form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+/**form text field style**/
+form .txt_field{
+    position: relative;
+    border-bottom: 2px solid #000;
+    margin: 30px 0;
+}
+/**form input style**/
+.txt_field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    font-family: Joyful,serif;
+    border: none;
+    background: none;
+    outline: none;
+    
+}
+/**input style**/
+input[type="submit"]{
+    width: 100%;
+    height: 50%;
+    border: 1px solid;
+    background:#90EE90;
+    border-radius: 25px;
+    font-size: 18px;
+    font-family: Joyful,serif;
+    text-shadow: -1px 1px 2.5px #000,
+    1px 1px 2.5px #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+/**form button hover effect**/
+input[type="submit"]:hover{
+    border-color: #2691d9;
+    transition: .5s;
+}
+/**shop layout**/
+#product{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2.5%;
+    
+}
+/**shop button**/
+button {
+    display: block;
+}
+/**item style**/
+.item{
+    border: 0.5em dotted black;
+    /*background-color: ;*/
+    
+    padding:5%;
+    
+    
+}
+/**image of item style**/
+img{
+    border:0.5em solid black;
+}
+/**add cart button style**/
+.button {
+	background-color:#d91515;
+	border-radius:28px;
+	border:1px solid #0a0a0a;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: Joyful,serif;
+	font-size:14px;
+	font-weight:bold;
+	padding:8px 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #000000;
+}
+/**add cart button hover effect**/
+.button:hover {
+	background-color:#a11010;
+}
+.button:active {
+	position:relative;
+	top:1px;
+} 
+/**font style**/
+p{
+    font-weight: bold;
+}
+/**cart total's style**/
+#total {
+    padding-left: 25px;
+}
+/**buy cart button style**/
+#buycart{
+    background-color:#32CD32;
+	border-radius:28px;
+	border:1px solid #0a0a0a;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: Joyful,serif;
+	font-size:18px;
+	font-weight:bold;
+    padding:8px 10px;
+    margin-left: 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #000000;
+}
+/**user's cart style**/
+#cartofuser{
+    margin-left: 5px;
+}
